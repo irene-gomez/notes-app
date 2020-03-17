@@ -1,0 +1,65 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 18px;
+    margin: 1em;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#btnAdd {
+    display: block;
+    border: none;
+    margin: 0 auto;
+    font-size: 2rem;
+    padding: .15em .7em;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+#noteListContainer {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.note {
+    width: auto;
+    height: 100px;
+    background-color: #ffffba;
+    padding: .5rem;
+    margin: .5rem 0;
+}
+
+@media all and (min-width: 480px) {
+    #noteListContainer {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    
+    .note {
+        width: 45%;
+        height: 100px;
+        margin: .5rem;
+    }
+}
+
+@media all and (min-width: 680px) {
+    .note {
+        width: 200px;
+    }
+}
