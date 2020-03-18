@@ -9,8 +9,9 @@ li {
 }
 
 body {
-    font-family: 'Baloo Chettan 2', cursive;
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
+    font-weight: 400;
     margin: 1em;
 }
 
@@ -37,12 +38,42 @@ body {
     justify-content: center;
 }
 
-.note {
+.noteItem {
     width: auto;
-    height: 100px;
+    min-height: 70px;
     background-color: #ffffba;
-    padding: .5rem;
-    margin: .5rem 0;
+    padding: 14px 20px 14px 14px;
+    margin: 8px 0;
+    border-radius: 6px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.note__header {
+    position: relative;
+}
+
+.noteClose {
+    position: absolute;
+    right: 8px;
+}
+
+.noteTitle {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.3;
+    padding-right: 30px;
+    outline: 0;
+}
+
+.noteBody {
+    line-height: 1.5;
+    outline: 0;
+}
+
+.noteBody p {
+    margin-bottom: 10px;
 }
 
 @media all and (min-width: 480px) {
@@ -51,15 +82,15 @@ body {
         justify-content: flex-start;
     }
     
-    .note {
+    .noteItem {
         width: 45%;
-        height: 100px;
+        /* height: 100px; */
         margin: .5rem;
     }
 }
 
 @media all and (min-width: 680px) {
-    .note {
+    .noteItem {
         width: 200px;
     }
 }
