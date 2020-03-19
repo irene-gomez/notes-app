@@ -8,18 +8,6 @@ const addNewNote = (number) => {
     noteEl.classList.add('noteItem');
     changeColorNote(number, noteEl);
 
-    // if (number === 0) {
-    //     noteEl.classList.add('daisyColor');
-    // } else if (number === 1) {
-    //     noteEl.classList.add('skyColor');
-    // }  else if (number === 2) {
-    //     noteEl.classList.add('pinkColor');
-    // }  else if (number === 3) {
-    //     noteEl.classList.add('clementineColor');
-    // } else if (number === 4) {
-    //     noteEl.classList.add('grassColor');
-    // }
-
     // Icon close
     const headerNoteEl = document.createElement('div');
     headerNoteEl.classList.add('note__header');
