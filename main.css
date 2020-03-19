@@ -60,7 +60,7 @@ body {
 
 .noteClose {
     position: absolute;
-    right: 8px;
+    right: -2px;
 }
 
 .noteTitle {
