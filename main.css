@@ -41,13 +41,18 @@ body {
 .noteItem {
     width: auto;
     min-height: 70px;
-    background-color: #ffffba;
     padding: 14px 20px 14px 14px;
     margin: 8px 0;
     border-radius: 6px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
+
+.daisyColor { background-color: #ffffba; }
+.skyColor { background-color: #bae1ff; }
+.pinkColor { background-color: #ffb3ba; }
+.clementineColor { background-color: #ffdfba; }
+.grassColor { background-color: #baffc9; }
 
 .note__header {
     position: relative;
