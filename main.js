@@ -6,23 +6,29 @@ const noteListContainerEl = document.getElementById('noteListContainer');
 const randomNumber = () => Math.floor(Math.random() * 5);
 
 const changeColorNote = (number, item) => {
-    if (number === 0) {
+    switch (number) {
+    case 0:
         item.classList.add('daisyColor');
-    } else if (number === 1) {
+        break;
+    case 1:
         item.classList.add('skyColor');
-    }  else if (number === 2) {
+        break;
+    case 2:
         item.classList.add('pinkColor');
-    }  else if (number === 3) {
+        break;
+    case 3:
         item.classList.add('clementineColor');
-    } else if (number === 4) {
+        break;
+
+    default:
         item.classList.add('grassColor');
+        break;
     }
 };
 
-const closeNote = (e) => {
+const closeNote = e => {
     const noteParent = e.currentTarget.parentElement.parentElement;
     noteParent.remove();
-
 };
 
 const addNewNote = number => {
